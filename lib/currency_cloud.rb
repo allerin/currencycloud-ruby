@@ -4,6 +4,7 @@ require 'json'
 
 require 'currency_cloud/resource'
 require 'currency_cloud/errors/error_utils'
+require 'currency_cloud/concern/customer_rate'
 lib_path = File.join(File.dirname(__FILE__), '**/*.*')
 Dir[lib_path].sort.each { |f| require f}
 
