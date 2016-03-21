@@ -1,7 +1,8 @@
 module CurrencyCloud
   class Rate
     include CurrencyCloud::Resource
-
+    include CurrencyCloud::CustomerRate
+    
     resource :rates
 
     def self.find(params)
