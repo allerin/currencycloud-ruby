@@ -6,7 +6,12 @@ module CurrencyCloud
     resource :conversions
     actions :create, :retrieve, :find
     
-    alias_attribute :client_sell_currency, :sell_currency
-    alias_attribute :client_buy_currency, :buy_currency
+    def client_sell_currency
+      sell_currency
+    end
+    
+    def client_buy_currency
+      buy_currency
+    end
   end
 end
